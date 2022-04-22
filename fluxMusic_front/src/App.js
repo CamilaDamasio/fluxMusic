@@ -9,7 +9,6 @@ import {
 import Home from './pages/Home';
 import Artists from './pages/Artists';
 import Albums from './pages/Albums';
-// import axios from 'axios';
 
 function App() {
 
