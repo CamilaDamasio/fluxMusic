@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/home.css';
 import { api } from '../Api';
+import Header from '../components/Header';
 
-export default function Home(props) {
+export default function Home() {
   const [news, setNews] = useState();
   console.log('News: ', news);
 
@@ -12,6 +13,7 @@ export default function Home(props) {
 
   return (
     <div className='home-page'>
+      <Header />
       <h2>Estou na Home!</h2>
       { news ? (
         <div className='body-news'>

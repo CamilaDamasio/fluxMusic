@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/artists.css';
 import { api } from '../Api';
+import Header from '../components/Header';
 
-
-export default function Artists(props) {
+export default function Artists() {
   const [artists, setArtists] = useState();
   console.log('Artists: ', artists);
 
@@ -13,6 +13,7 @@ export default function Artists(props) {
 
   return (
     <div className='home-page'>
+      <Header />
       <h2>Estou na Artists!</h2>
       { artists ? (
         <div className='body-news'>
@@ -21,10 +22,10 @@ export default function Artists(props) {
           <div className='new'>
             <h5>{item.name}</h5>
           </div>
-          )}
+        )}
           </div>
         </div>
       ) : null }
     </div>
-  )
+  );
 }
