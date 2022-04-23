@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const news = require('./Routes/NewsRouter/router');
+const news = require('./Routes/newsRouter/router');
 const artists = require('../src/Routes/artistsRouter/router');
 const albums = require('../src/Routes/albumsRouter/router');
 

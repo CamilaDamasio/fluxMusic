@@ -1,9 +1,0 @@
-Implementar uma timeline contendo as notícias mais recentes:
-http://api.music-story.com/en/news/search?source=Music%20Story
-http://api.music-story.com/en/genre/21/news
-
-Implementar uma página para os artistas renomados:
-http://api.music-story.com/en/genre/1/artists
-
-Implementar uma página para os discos do momentos:
-http://api.music-story.com/en/genre/1/albums
