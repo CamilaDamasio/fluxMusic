@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  height: 15vh;
+}
+
+.nav-btn {
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 3vw;
+  color: #233572;
+  width: 20%;
+}
+
+.nav-btn:hover {
+  color: #de6e6d;
+  cursor: pointer;
+}
+
+.nav-btn:active {
+  color: rgba(0, 0, 255, 0.459);
+}

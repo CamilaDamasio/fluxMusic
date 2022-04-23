@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import '../styles/home.css';
 import { api } from '../Api';
 import Header from '../components/Header';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import image from '../images/background_image.png';
 
 export default function Home() {
   const [news, setNews] = useState();
@@ -12,23 +15,26 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='home-page'>
-      <Header />
-      <h2>Estou na Home!</h2>
-      { news ? (
-        <div className='body-news'>
-          <div className='news'>
-        {news.map((item) => 
-          <div className='new'>
-            <h5>{item.title}</h5>
-            <p>{ item.writer }</p>
-            <p>{ item.subtitle }</p>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">More...</a>
-          </div>
-          )}
-          </div>
-        </div>
-      ) : null }
+    <div className='body'>
+      <img src={image} alt="background sound" className='background-img' />
+        <Header />
+        { news ? (
+          <Slide className='carousel'>
+            {news.map((item) => (
+              <div className="each-slide" key={1}>
+                <div className='slide'>
+                  <span className='title'>{item.title}</span>
+                  <div className='subtitle'>
+                    <p>{item.subtitle}</p>
+                  </div>
+                  <div className='link-more'>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className='link'>More...</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slide>
+          ) : null }
     </div>
-  )
+  );
 }

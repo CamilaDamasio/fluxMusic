@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import '../styles/artists.css';
 import { api } from '../Api';
 import Header from '../components/Header';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import image from '../images/background_image.png';
 
 export default function Albums() {
   const [albums, setAlbums] = useState();
@@ -12,19 +15,20 @@ export default function Albums() {
   }, []);
 
   return (
-    <div className='home-page'>
+    <div className='body'>
+      <img src={image} alt="background sound" className='background-img' />
       <Header />
       <h2>Estou na Albums!</h2>
       { albums ? (
-        <div className='body-news'>
-          <div className='news'>
-        {albums.map((item) => 
-          <div className='new'>
-            <h5>Olá</h5>
+        <Slide className='carousel'>
+        {albums.map((item) => (
+          <div className="each-slide" key={1}>
+            <div className='slide'>
+              <span className='title'>{item.title}</span>
+            </div>
           </div>
-        )}
-          </div>
-        </div>
+        ))}
+        </Slide>
       ) : null }
     </div>
   );

@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  // Link
 } from "react-router-dom";
 import Home from './pages/Home';
 import Artists from './pages/Artists';

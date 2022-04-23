@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import '../styles/artists.css';
 import { api } from '../Api';
 import Header from '../components/Header';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import image from '../images/background_image.png';
 
 export default function Artists() {
   const [artists, setArtists] = useState();
@@ -12,19 +15,20 @@ export default function Artists() {
   }, []);
 
   return (
-    <div className='home-page'>
+    <div className='body'>
+      <img src={image} alt="background sound" className='background-img' />
       <Header />
       <h2>Estou na Artists!</h2>
       { artists ? (
-        <div className='body-news'>
-          <div className='news'>
-        {artists.map((item) => 
-          <div className='new'>
-            <h5>{item.name}</h5>
+        <Slide className='carousel'>
+        {artists.map((item) => (
+          <div className="each-slide" key={1}>
+            <div className='slide'>
+              <span className='title'>{item.name}</span>
+            </div>
           </div>
-        )}
-          </div>
-        </div>
+        ))}
+        </Slide>
       ) : null }
     </div>
   );
