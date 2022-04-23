@@ -4,6 +4,17 @@
   justify-content: space-evenly;
   position: relative;
   height: 15vh;
+  padding: 15px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-btns-container {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
 }
 
 .nav-btn {

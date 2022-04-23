@@ -2,7 +2,7 @@
 
 Projeto criado colocando em prática os conhecimentos adquiridos em Front-End e Back-End,  onde crio uma aplicação web de um novo produto que a goFlux decidiu investir, o fluxMusic. Um site que possibilita descobrir artistas, álbuns e novidades do mundo da música.
 
-Para isso, foram consumidos dados da API: http://developers.music-story.com/developers/genre.
+Para isso, foram consumidos dados da API: [music-story] (http://developers.music-story.com/developers/genre).
 
 Utilizando os endpoints:
 - [http://api.music-story.com/en/genre/21/news](http:// api.music-story.com/en/genre/21/news)
@@ -47,6 +47,7 @@ Este projeto foi construído para um teste na empresa goFlux.
 # Tecnologias utilizadas
 
 - [React](https://pt-br.reactjs.org/)
+- [Node.js](https://nodejs.org/en/)
 - [Heroku](https://www.heroku.com/)
 
 ---
@@ -63,10 +64,10 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   │   │   │   └── router.js
 │   │   │   ├── artistsRouter
 │   │   │   │   └── router.js
-│   │   │   ├── newsRouter
-│   │   │   │   └── router.js
-│   │   │   ├── app.js
-│   │   │   └── index.js
+│   │   │   └── newsRouter
+│   │   │       └── router.js
+│   │   ├── app.js
+│   │   └── index.js
 │   ├── .gitignore
 │   ├── package-lock.json
 │   └── package.json
@@ -76,10 +77,10 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   │   └── index.html
 │   ├── src
 │   │   ├── components
-│   │   │   ├── Header.js
-│   │   │   └── router.js
+│   │   │   └── Header.js
 │   │   ├── images
-│   │   │   └── background_image.png
+│   │   │   ├── background_image.png
+│   │   │   └── logo.png
 │   │   ├── pages
 │   │   │   ├── Albums.js
 │   │   │   ├── Artists.js
@@ -95,6 +96,7 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   │   ├── index.js
 │   │   ├── reportWebVitals.js
 │   │   └── setupTests.js
+│   ├── .env
 │   ├── .gitignore
 │   ├── package-lock.json
 │   └── package.json
@@ -156,7 +158,7 @@ Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
 
   O deploy desta aplicação foi hospedada no heroku.
 
-  - link: []()
+  - link: [https://fluxmusic-front.herokuapp.com/](https://fluxmusic-front.herokuapp.com/)
 
 ---
 

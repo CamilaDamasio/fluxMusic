@@ -18,7 +18,6 @@ export default function Albums() {
     <div className='body'>
       <img src={image} alt="background sound" className='background-img' />
       <Header />
-      <h2>Estou na Albums!</h2>
       { albums ? (
         <Slide className='carousel'>
         {albums.map((item) => (

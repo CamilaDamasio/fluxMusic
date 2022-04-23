@@ -18,7 +18,6 @@ export default function Artists() {
     <div className='body'>
       <img src={image} alt="background sound" className='background-img' />
       <Header />
-      <h2>Estou na Artists!</h2>
       { artists ? (
         <Slide className='carousel'>
         {artists.map((item) => (
