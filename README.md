@@ -5,9 +5,9 @@ Projeto criado colocando em prática os conhecimentos adquiridos em Front-End e 
 Para isso, foram consumidos dados da API: http://developers.music-story.com/developers/genre.
 
 Utilizando os endpoints:
-[http://api.music-story.com/en/genre/21/news](http://api.music-story.com/en/genre/21/news)
-[http://api.music-story.com/en/genre/1/artists](http://api.music-story.com/en/genre/1/artists)
-[http://api.music-story.com/en/genre/1/albums](http://api.music-story.com/en/genre/1/albums)
+- [http://api.music-story.com/en/genre/21/news](http:// api.music-story.com/en/genre/21/news)
+- [http://api.music-story.com/en/genre/1/artists](http://api.music-story.com/en/genre/1/artists)
+- [http://api.music-story.com/en/genre/1/albums](http://api.music-story.com/en/genre/1/albums)
 
 ---
 
