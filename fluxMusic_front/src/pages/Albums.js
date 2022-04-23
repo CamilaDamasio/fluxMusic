@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import image from '../images/background_image.png';
+import Loading from '../components/Loading';
 
 export default function Albums() {
   const [albums, setAlbums] = useState();
@@ -28,7 +29,7 @@ export default function Albums() {
           </div>
         ))}
         </Slide>
-      ) : null }
+      ) : <Loading /> }
     </div>
   );
 }

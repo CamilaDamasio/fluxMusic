@@ -71,13 +71,15 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   ├── .gitignore
 │   ├── package-lock.json
 │   └── package.json
+│
 ├── fluxMusic_front
 │   ├── public
 │   │   ├── favicon.ico
 │   │   └── index.html
 │   ├── src
 │   │   ├── components
-│   │   │   └── Header.js
+│   │   │   ├── Header.js
+│   │   │   └── Loading.js
 │   │   ├── images
 │   │   │   ├── background_image.png
 │   │   │   └── logo.png
@@ -90,7 +92,8 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   │   │   ├── artists.css
 │   │   │   ├── header.css
 │   │   │   ├── home.css
-│   │   │   └── index.css
+│   │   │   ├── index.css
+│   │   │   └── loading.css
 │   │   ├── Api.js
 │   │   ├── App.js
 │   │   ├── index.js
