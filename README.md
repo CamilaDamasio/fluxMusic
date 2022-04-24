@@ -160,11 +160,11 @@ Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
     $ cd fluxMusic_front
     $ npm start
 
-    # Volte para o diretório fluxMusic
-    $ cd ..
-    # Abra o diretório do Back-End e inicie
+    # Abra outro terminal no diretório fluxMusic, acesso o diretório do Back-End e inicie
     $ cd fluxMusic_back
     $ npm start
+
+    # Atualize o navegador que está rodando o Front-End e sua aplicação estará funcionando corretamente!
 
     ```
 
