@@ -5,7 +5,7 @@ Projeto criado colocando em prática os conhecimentos adquiridos em Front-End e 
 Para isso, foram consumidos dados da API: [music-story] (http://developers.music-story.com/developers/genre).
 
 Utilizando os endpoints:
-- [http://api.music-story.com/en/genre/21/news](http:// api.music-story.com/en/genre/21/news)
+- [http://api.music-story.com/en/genre/21/news](http://api.music-story.com/en/genre/21/news)
 - [http://api.music-story.com/en/genre/1/artists](http://api.music-story.com/en/genre/1/artists)
 - [http://api.music-story.com/en/genre/1/albums](http://api.music-story.com/en/genre/1/albums)
 
@@ -29,6 +29,14 @@ Utilizando os endpoints:
 
 Este projeto foi construído para um teste na empresa goFlux.
 
+## Testes
+
+Foi iniciado testes unitários com o RTL que pode ser testado no terminal com o comando:
+
+```bash
+  $ npm test
+
+```
 ---
 
 # Habilidades desenvolvidas
@@ -86,16 +94,19 @@ O projeto está organizado e estruturado da seguinte maneira:
 │   │   ├── pages
 │   │   │   ├── Albums.js
 │   │   │   ├── Artists.js
-│   │   │   └── Home.js
+│   │   │   ├── Home.js
+│   │   │   └── NoMatch.js
 │   │   ├── styles
 │   │   │   ├── App.css
 │   │   │   ├── artists.css
 │   │   │   ├── header.css
 │   │   │   ├── home.css
 │   │   │   ├── index.css
-│   │   │   └── loading.css
+│   │   │   ├── loading.css
+│   │   │   └── noMatch.css
 │   │   ├── Api.js
 │   │   ├── App.js
+│   │   ├── App.test.js
 │   │   ├── index.js
 │   │   ├── reportWebVitals.js
 │   │   └── setupTests.js

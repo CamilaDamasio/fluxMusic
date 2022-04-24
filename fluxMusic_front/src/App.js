@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home';
 import Artists from './pages/Artists';
 import Albums from './pages/Albums';
+import NoMatch from './pages/NoMatch';
 
 function App() {
 
@@ -15,9 +16,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='/artists' element={<Artists />} />
           <Route path='/albums' element={<Albums />} />
+          <Route path='*' element={<NoMatch />} />
         </Routes>
       </BrowserRouter>
     </div>
