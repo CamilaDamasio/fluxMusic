@@ -2,7 +2,7 @@
 
 Projeto criado colocando em prática os conhecimentos adquiridos em Front-End e Back-End,  onde crio uma aplicação web de um novo produto que a goFlux decidiu investir, o fluxMusic. Um site que possibilita descobrir artistas, álbuns e novidades do mundo da música.
 
-Para isso, foram consumidos dados da API: [music-story] (http://developers.music-story.com/developers/genre).
+Para isso, foram consumidos dados da API: [music-story](http://developers.music-story.com/developers/genre).
 
 Utilizando os endpoints:
 - [http://api.music-story.com/en/genre/21/news](http://api.music-story.com/en/genre/21/news)
