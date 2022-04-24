@@ -9,6 +9,11 @@
 
 .logo {
   width: 100px;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  width: 110px;
 }
 
 .nav-btns-container {

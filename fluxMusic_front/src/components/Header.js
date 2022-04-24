@@ -14,7 +14,7 @@ function Header() {
       <div className='nav-btns-container'>
         <button type="button" className="nav-btn" onClick={ () => navigate('/') }>
           <div className="nav-item">
-            <h5 className="nav-link" aria-current="page">Home / News</h5>
+            <h5 className="nav-link" aria-current="page">News</h5>
           </div>
         </button>
         <button type="button" className="nav-btn" onClick={ () => navigate('/artists') }>

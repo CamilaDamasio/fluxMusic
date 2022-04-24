@@ -28,8 +28,25 @@
   border-radius: 7px;
 }
 
+.default-nav:first-of-type {
+  margin-right: -40px !important;
+}
+
+.default-nav:last-of-type {
+  margin-left: -40px !important;
+}
+
+.slide {
+  width: 95%;
+}
+
+.each-slide {
+  width: 90%;
+  margin: auto;
+}
+
 .images-wrap {
-  background-color: rgba(30, 27, 27, 0.78);
+  background-color: rgba(30, 27, 27, 0.91);
   color: aliceblue;
   align-items: center;
   padding: 15px;
@@ -38,11 +55,13 @@
 .title {
   margin: auto;
   width: 80%;
+  font-weight: 900;
 }
 
 .subtitle {
   margin: auto;
   width: 70%;
+  font-weight: 300;
 }
 
 .link-more {
@@ -54,6 +73,10 @@
   margin: auto;
   justify-content: center;
   height: 5vh;
+}
+
+.link-more:hover {
+  background-color: #f58785;
 }
 
 .link {
