@@ -9,7 +9,6 @@ import Loading from '../components/Loading';
 
 export default function Artists() {
   const [artists, setArtists] = useState();
-  console.log('Artists: ', artists);
 
   useEffect(() => {
     api.get('/artists').then(res => setArtists(res.data.root.data[0].item));

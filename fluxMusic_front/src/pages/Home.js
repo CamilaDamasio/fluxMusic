@@ -9,7 +9,6 @@ import Loading from '../components/Loading';
 
 export default function Home() {
   const [news, setNews] = useState();
-  console.log('News: ', news);
 
   useEffect(() => {
     api.get('/').then(res => setNews(res.data.root.data[0].item));

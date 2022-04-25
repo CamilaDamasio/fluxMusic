@@ -9,7 +9,6 @@ import Loading from '../components/Loading';
 
 export default function Albums() {
   const [albums, setAlbums] = useState();
-  console.log('Albums: ', albums);
 
   useEffect(() => {
     api.get('/albums').then(res => setAlbums(res.data.root.data[0].item));
