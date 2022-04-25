@@ -31,7 +31,7 @@ Este projeto foi construído para um teste na empresa goFlux.
 
 ## Testes
 
-Foi iniciado testes unitários com o RTL que pode ser testado no terminal com o comando:
+Foi iniciado testes unitários com o RTL que pode ser testado no terminal do Front-End com o comando:
 
 ```bash
   $ npm test
